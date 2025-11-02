@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}საიტი{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="/info/">ინფორმაცია</a> |
+        <a href="/hobbies/">ჰობები</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
